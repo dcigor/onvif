@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="IdiaMainControl">
+            <connections>
+                <outlet property="imageView" destination="Ok0-iX-DKO" id="kEa-x6-Dcg"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="840" height="740"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ROr-O4-sxg">
+                    <rect key="frame" x="20" y="673" width="194" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="address:host" drawsBackground="YES" id="gVU-ZY-wHz">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="address" id="7wa-UY-3uv">
+                            <dictionary key="options">
+                                <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                <string key="NSNoSelectionPlaceholder">address:host</string>
+                                <string key="NSNullPlaceholder">address:host</string>
+                            </dictionary>
+                        </binding>
+                        <outlet property="nextKeyView" destination="nOz-yN-inM" id="vjm-Oi-1Bg"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nOz-yN-inM">
+                    <rect key="frame" x="222" y="673" width="194" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="username" drawsBackground="YES" id="o24-0r-BX5">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="username" id="XfT-EV-XcU">
+                            <dictionary key="options">
+                                <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                <string key="NSNullPlaceholder">username</string>
+                            </dictionary>
+                        </binding>
+                        <outlet property="nextKeyView" destination="cT1-9w-Bd3" id="o3z-J8-wLF"/>
+                    </connections>
+                </textField>
+                <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cT1-9w-Bd3">
+                    <rect key="frame" x="424" y="673" width="194" height="22"/>
+                    <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="password" drawsBackground="YES" usesSingleLineMode="YES" id="Vit-qE-kH3">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <allowedInputSourceLocales>
+                            <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                        </allowedInputSourceLocales>
+                    </secureTextFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="password" id="1bj-N0-dTY">
+                            <dictionary key="options">
+                                <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                <string key="NSNullPlaceholder">password</string>
+                            </dictionary>
+                        </binding>
+                        <outlet property="nextKeyView" destination="9WZ-z9-Ane" id="Cf6-lp-yme"/>
+                    </connections>
+                </secureTextField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9WZ-z9-Ane">
+                    <rect key="frame" x="620" y="666" width="206" height="32"/>
+                    <buttonCell key="cell" type="push" title="Connect" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CDK-49-7O1">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onConnect:" target="-2" id="gKi-rF-pSY"/>
+                        <binding destination="-2" name="enabled" keyPath="isConnecting" id="A8w-qh-652">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSNegateBoolean</string>
+                            </dictionary>
+                        </binding>
+                        <outlet property="nextKeyView" destination="kdu-pE-pyh" id="BU3-RG-TpI"/>
+                    </connections>
+                </button>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ok0-iX-DKO" customClass="IdiaImageView">
+                    <rect key="frame" x="20" y="20" width="800" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="800" id="G5R-9C-iCf"/>
+                        <constraint firstAttribute="height" constant="600" id="aYA-lH-i89"/>
+                    </constraints>
+                </customView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kdu-pE-pyh">
+                    <rect key="frame" x="422" y="642" width="198" height="18"/>
+                    <buttonCell key="cell" type="check" title="Save Faces to Disk" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="IpM-Pp-F7B">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="isSavingToDisk" id="e2A-NL-aKR"/>
+                        <outlet property="nextKeyView" destination="cox-7G-f9z" id="eLp-uM-3wv"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cox-7G-f9z">
+                    <rect key="frame" x="620" y="633" width="206" height="32"/>
+                    <buttonCell key="cell" type="push" title="View Faces" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wgW-gq-GWx">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onViewFaces:" target="-2" id="D3z-r9-BaH"/>
+                        <outlet property="nextKeyView" destination="ROr-O4-sxg" id="HXw-m1-Mhs"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fSa-m2-0tT">
+                    <rect key="frame" x="18" y="703" width="804" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="The app detects faces in video and saves them. Enter camera address and credentials and click Connect" id="bcZ-uQ-Yx3">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="status" id="XVd-nR-foT"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="cox-7G-f9z" firstAttribute="top" secondItem="9WZ-z9-Ane" secondAttribute="bottom" constant="12" symbolic="YES" id="1PP-Oa-BiY"/>
+                <constraint firstItem="ROr-O4-sxg" firstAttribute="top" secondItem="fSa-m2-0tT" secondAttribute="bottom" constant="8" symbolic="YES" id="4I6-pA-eGv"/>
+                <constraint firstAttribute="bottom" secondItem="Ok0-iX-DKO" secondAttribute="bottom" constant="20" symbolic="YES" id="4wa-XU-Mhf"/>
+                <constraint firstAttribute="trailing" secondItem="fSa-m2-0tT" secondAttribute="trailing" constant="20" symbolic="YES" id="5co-yl-qxW"/>
+                <constraint firstItem="cox-7G-f9z" firstAttribute="leading" secondItem="9WZ-z9-Ane" secondAttribute="leading" id="G7g-gC-Lwj"/>
+                <constraint firstItem="kdu-pE-pyh" firstAttribute="baseline" secondItem="cox-7G-f9z" secondAttribute="baseline" id="Go4-b9-4SV"/>
+                <constraint firstItem="fSa-m2-0tT" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" symbolic="YES" id="I1g-kd-uHS"/>
+                <constraint firstItem="ROr-O4-sxg" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="I8a-PK-l3u"/>
+                <constraint firstItem="fSa-m2-0tT" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="LgN-05-ivo"/>
+                <constraint firstItem="cox-7G-f9z" firstAttribute="leading" secondItem="kdu-pE-pyh" secondAttribute="trailing" constant="8" symbolic="YES" id="MEP-60-E6g"/>
+                <constraint firstItem="Ok0-iX-DKO" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="Y58-vq-9dl"/>
+                <constraint firstItem="cox-7G-f9z" firstAttribute="trailing" secondItem="9WZ-z9-Ane" secondAttribute="trailing" id="ZEU-jT-6CM"/>
+                <constraint firstAttribute="trailing" secondItem="9WZ-z9-Ane" secondAttribute="trailing" constant="20" symbolic="YES" id="Zkc-uk-ARJ"/>
+                <constraint firstItem="nOz-yN-inM" firstAttribute="leading" secondItem="ROr-O4-sxg" secondAttribute="trailing" constant="8" symbolic="YES" id="bMY-Vn-xCg"/>
+                <constraint firstItem="cT1-9w-Bd3" firstAttribute="width" secondItem="ROr-O4-sxg" secondAttribute="width" id="g5L-kU-G59"/>
+                <constraint firstItem="9WZ-z9-Ane" firstAttribute="width" secondItem="ROr-O4-sxg" secondAttribute="width" id="iMi-1N-KpO"/>
+                <constraint firstItem="Ok0-iX-DKO" firstAttribute="top" secondItem="cox-7G-f9z" secondAttribute="bottom" constant="20" symbolic="YES" id="jAT-Bo-LHD"/>
+                <constraint firstItem="9WZ-z9-Ane" firstAttribute="leading" secondItem="cT1-9w-Bd3" secondAttribute="trailing" constant="8" symbolic="YES" id="jzw-Pr-O11"/>
+                <constraint firstItem="nOz-yN-inM" firstAttribute="centerY" secondItem="ROr-O4-sxg" secondAttribute="centerY" id="k2d-jR-Ibm"/>
+                <constraint firstItem="9WZ-z9-Ane" firstAttribute="centerY" secondItem="cT1-9w-Bd3" secondAttribute="centerY" id="kP8-1f-NWp"/>
+                <constraint firstItem="kdu-pE-pyh" firstAttribute="leading" secondItem="cT1-9w-Bd3" secondAttribute="leading" id="lSR-ni-Tzg"/>
+                <constraint firstItem="nOz-yN-inM" firstAttribute="width" secondItem="ROr-O4-sxg" secondAttribute="width" id="lZh-Q7-K2R"/>
+                <constraint firstItem="cT1-9w-Bd3" firstAttribute="centerY" secondItem="nOz-yN-inM" secondAttribute="centerY" id="oLe-af-nHS"/>
+                <constraint firstItem="cT1-9w-Bd3" firstAttribute="leading" secondItem="nOz-yN-inM" secondAttribute="trailing" constant="8" symbolic="YES" id="tE7-XI-tDz"/>
+                <constraint firstAttribute="trailing" secondItem="Ok0-iX-DKO" secondAttribute="trailing" constant="20" symbolic="YES" id="u40-jt-AIu"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="168.5"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="Jok-z1-hfh"/>
+    </objects>
+</document>

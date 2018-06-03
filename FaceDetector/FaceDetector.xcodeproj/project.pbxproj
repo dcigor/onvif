@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78CC881520C31A8B00D32518 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CC881420C31A8B00D32518 /* AppDelegate.m */; };
+		78CC881720C31A8D00D32518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78CC881620C31A8D00D32518 /* Assets.xcassets */; };
+		78CC881A20C31A8D00D32518 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78CC881820C31A8D00D32518 /* MainMenu.xib */; };
+		78CC881D20C31A8D00D32518 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CC881C20C31A8D00D32518 /* main.m */; };
+		78CC882720C31B7200D32518 /* IdiaMainControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CC882520C31B7200D32518 /* IdiaMainControl.m */; };
+		78CC882820C31B7200D32518 /* IdiaMainControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78CC882620C31B7200D32518 /* IdiaMainControl.xib */; };
+		78CC883820C32A8700D32518 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CC883720C32A8700D32518 /* CoreMedia.framework */; };
+		78CC883A20C32A9B00D32518 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CC883920C32A9B00D32518 /* VideoToolbox.framework */; };
+		78CC883D20C336AA00D32518 /* IdiaVideoSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78CC883B20C336AA00D32518 /* IdiaVideoSource.cpp */; };
+		78CC884020C35EB600D32518 /* IdiaImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CC883F20C35EB600D32518 /* IdiaImageView.m */; };
+		78CC884220C3855400D32518 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CC884120C3855300D32518 /* Vision.framework */; };
+		78F9AA7120C4465700813BDA /* IdiaOnvifParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F9AA7020C4465700813BDA /* IdiaOnvifParser.swift */; };
+		78F9AA7B20C44C8C00813BDA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 78F9AA7320C44C8C00813BDA /* LICENSE */; };
+		78F9AA7C20C44C8C00813BDA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 78F9AA7420C44C8C00813BDA /* README.md */; };
+		78F9AA7D20C44C8C00813BDA /* ONVIFCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F9AA7720C44C8C00813BDA /* ONVIFCamera.swift */; };
+		78F9AA7E20C44C8C00813BDA /* RealmRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F9AA7820C44C8C00813BDA /* RealmRetriever.swift */; };
+		78F9AA8120C455A500813BDA /* SOAPEngineOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F9AA8020C455A500813BDA /* SOAPEngineOSX.framework */; };
+		78F9AA8320C455E300813BDA /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F9AA8220C455E300813BDA /* libxml2.tbd */; };
+		78F9AA8A20C4720500813BDA /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F9AA8420C4720500813BDA /* libavutil.a */; };
+		78F9AA8B20C4720500813BDA /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F9AA8520C4720500813BDA /* libswscale.a */; };
+		78F9AA8C20C4720500813BDA /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F9AA8620C4720500813BDA /* libavcodec.a */; };
+		78F9AA8D20C4720500813BDA /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F9AA8720C4720500813BDA /* libswresample.a */; };
+		78F9AA8E20C4720500813BDA /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F9AA8820C4720500813BDA /* libavfilter.a */; };
+		78F9AA8F20C4720500813BDA /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F9AA8920C4720500813BDA /* libavformat.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		78CC881020C31A8B00D32518 /* FaceDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78CC881320C31A8B00D32518 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		78CC881420C31A8B00D32518 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		78CC881620C31A8D00D32518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78CC881920C31A8D00D32518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		78CC881B20C31A8D00D32518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78CC881C20C31A8D00D32518 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		78CC882420C31B7200D32518 /* IdiaMainControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdiaMainControl.h; sourceTree = "<group>"; };
+		78CC882520C31B7200D32518 /* IdiaMainControl.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = IdiaMainControl.m; sourceTree = "<group>"; };
+		78CC882620C31B7200D32518 /* IdiaMainControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdiaMainControl.xib; sourceTree = "<group>"; };
+		78CC883720C32A8700D32518 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		78CC883920C32A9B00D32518 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		78CC883B20C336AA00D32518 /* IdiaVideoSource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IdiaVideoSource.cpp; sourceTree = "<group>"; };
+		78CC883C20C336AA00D32518 /* IdiaVideoSource.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IdiaVideoSource.hpp; sourceTree = "<group>"; };
+		78CC883E20C35EB600D32518 /* IdiaImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdiaImageView.h; sourceTree = "<group>"; };
+		78CC883F20C35EB600D32518 /* IdiaImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdiaImageView.m; sourceTree = "<group>"; };
+		78CC884120C3855300D32518 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		78F9AA6F20C4465700813BDA /* FaceDetector-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaceDetector-Bridging-Header.h"; sourceTree = "<group>"; };
+		78F9AA7020C4465700813BDA /* IdiaOnvifParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdiaOnvifParser.swift; sourceTree = "<group>"; };
+		78F9AA7320C44C8C00813BDA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		78F9AA7420C44C8C00813BDA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		78F9AA7720C44C8C00813BDA /* ONVIFCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONVIFCamera.swift; sourceTree = "<group>"; };
+		78F9AA7820C44C8C00813BDA /* RealmRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRetriever.swift; sourceTree = "<group>"; };
+		78F9AA8020C455A500813BDA /* SOAPEngineOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SOAPEngineOSX.framework; sourceTree = "<group>"; };
+		78F9AA8220C455E300813BDA /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		78F9AA8420C4720500813BDA /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../../../../depends/v5/ffmpeg/lib/libavutil.a; sourceTree = "<group>"; };
+		78F9AA8520C4720500813BDA /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ../../../../depends/v5/ffmpeg/lib/libswscale.a; sourceTree = "<group>"; };
+		78F9AA8620C4720500813BDA /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../../../../depends/v5/ffmpeg/lib/libavcodec.a; sourceTree = "<group>"; };
+		78F9AA8720C4720500813BDA /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../../../../depends/v5/ffmpeg/lib/libswresample.a; sourceTree = "<group>"; };
+		78F9AA8820C4720500813BDA /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = ../../../../depends/v5/ffmpeg/lib/libavfilter.a; sourceTree = "<group>"; };
+		78F9AA8920C4720500813BDA /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../../../../depends/v5/ffmpeg/lib/libavformat.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78CC880D20C31A8B00D32518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78F9AA8A20C4720500813BDA /* libavutil.a in Frameworks */,
+				78F9AA8D20C4720500813BDA /* libswresample.a in Frameworks */,
+				78F9AA8F20C4720500813BDA /* libavformat.a in Frameworks */,
+				78F9AA8B20C4720500813BDA /* libswscale.a in Frameworks */,
+				78F9AA8320C455E300813BDA /* libxml2.tbd in Frameworks */,
+				78CC884220C3855400D32518 /* Vision.framework in Frameworks */,
+				78CC883A20C32A9B00D32518 /* VideoToolbox.framework in Frameworks */,
+				78F9AA8E20C4720500813BDA /* libavfilter.a in Frameworks */,
+				78CC883820C32A8700D32518 /* CoreMedia.framework in Frameworks */,
+				78F9AA8120C455A500813BDA /* SOAPEngineOSX.framework in Frameworks */,
+				78F9AA8C20C4720500813BDA /* libavcodec.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78CC880720C31A8B00D32518 = {
+			isa = PBXGroup;
+			children = (
+				78F9AA7220C44C8C00813BDA /* ONVIFCamera */,
+				78CC882920C32A5000D32518 /* ffmpeg */,
+				78CC881220C31A8B00D32518 /* FaceDetector */,
+				78CC881120C31A8B00D32518 /* Products */,
+				78CC883620C32A8700D32518 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		78CC881120C31A8B00D32518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78CC881020C31A8B00D32518 /* FaceDetector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78CC881220C31A8B00D32518 /* FaceDetector */ = {
+			isa = PBXGroup;
+			children = (
+				78CC881320C31A8B00D32518 /* AppDelegate.h */,
+				78CC881420C31A8B00D32518 /* AppDelegate.m */,
+				78CC881620C31A8D00D32518 /* Assets.xcassets */,
+				78CC881820C31A8D00D32518 /* MainMenu.xib */,
+				78CC881B20C31A8D00D32518 /* Info.plist */,
+				78CC881C20C31A8D00D32518 /* main.m */,
+				78CC882420C31B7200D32518 /* IdiaMainControl.h */,
+				78CC882520C31B7200D32518 /* IdiaMainControl.m */,
+				78CC882620C31B7200D32518 /* IdiaMainControl.xib */,
+				78CC883B20C336AA00D32518 /* IdiaVideoSource.cpp */,
+				78CC883C20C336AA00D32518 /* IdiaVideoSource.hpp */,
+				78CC883E20C35EB600D32518 /* IdiaImageView.h */,
+				78CC883F20C35EB600D32518 /* IdiaImageView.m */,
+				78F9AA7020C4465700813BDA /* IdiaOnvifParser.swift */,
+				78F9AA6F20C4465700813BDA /* FaceDetector-Bridging-Header.h */,
+			);
+			path = FaceDetector;
+			sourceTree = "<group>";
+		};
+		78CC882920C32A5000D32518 /* ffmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				78F9AA8620C4720500813BDA /* libavcodec.a */,
+				78F9AA8820C4720500813BDA /* libavfilter.a */,
+				78F9AA8920C4720500813BDA /* libavformat.a */,
+				78F9AA8420C4720500813BDA /* libavutil.a */,
+				78F9AA8720C4720500813BDA /* libswresample.a */,
+				78F9AA8520C4720500813BDA /* libswscale.a */,
+			);
+			path = ffmpeg;
+			sourceTree = "<group>";
+		};
+		78CC883620C32A8700D32518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78F9AA8220C455E300813BDA /* libxml2.tbd */,
+				78CC884120C3855300D32518 /* Vision.framework */,
+				78CC883920C32A9B00D32518 /* VideoToolbox.framework */,
+				78CC883720C32A8700D32518 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78F9AA7220C44C8C00813BDA /* ONVIFCamera */ = {
+			isa = PBXGroup;
+			children = (
+				78F9AA7320C44C8C00813BDA /* LICENSE */,
+				78F9AA7420C44C8C00813BDA /* README.md */,
+				78F9AA7520C44C8C00813BDA /* ONVIFCamera */,
+			);
+			path = ONVIFCamera;
+			sourceTree = "<group>";
+		};
+		78F9AA7520C44C8C00813BDA /* ONVIFCamera */ = {
+			isa = PBXGroup;
+			children = (
+				78F9AA7620C44C8C00813BDA /* Classes */,
+				78F9AA7920C44C8C00813BDA /* SOAPEngine */,
+			);
+			path = ONVIFCamera;
+			sourceTree = "<group>";
+		};
+		78F9AA7620C44C8C00813BDA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				78F9AA7720C44C8C00813BDA /* ONVIFCamera.swift */,
+				78F9AA7820C44C8C00813BDA /* RealmRetriever.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		78F9AA7920C44C8C00813BDA /* SOAPEngine */ = {
+			isa = PBXGroup;
+			children = (
+				78F9AA8020C455A500813BDA /* SOAPEngineOSX.framework */,
+			);
+			path = SOAPEngine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78CC880F20C31A8B00D32518 /* FaceDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78CC882120C31A8D00D32518 /* Build configuration list for PBXNativeTarget "FaceDetector" */;
+			buildPhases = (
+				78CC880C20C31A8B00D32518 /* Sources */,
+				78CC880D20C31A8B00D32518 /* Frameworks */,
+				78CC880E20C31A8B00D32518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceDetector;
+			productName = Background;
+			productReference = 78CC881020C31A8B00D32518 /* FaceDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78CC880820C31A8B00D32518 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = IgorDiakov;
+				TargetAttributes = {
+					78CC880F20C31A8B00D32518 = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 78CC880B20C31A8B00D32518 /* Build configuration list for PBXProject "FaceDetector" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78CC880720C31A8B00D32518;
+			productRefGroup = 78CC881120C31A8B00D32518 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78CC880F20C31A8B00D32518 /* FaceDetector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78CC880E20C31A8B00D32518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78CC882820C31B7200D32518 /* IdiaMainControl.xib in Resources */,
+				78CC881720C31A8D00D32518 /* Assets.xcassets in Resources */,
+				78F9AA7C20C44C8C00813BDA /* README.md in Resources */,
+				78F9AA7B20C44C8C00813BDA /* LICENSE in Resources */,
+				78CC881A20C31A8D00D32518 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78CC880C20C31A8B00D32518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78F9AA7E20C44C8C00813BDA /* RealmRetriever.swift in Sources */,
+				78F9AA7120C4465700813BDA /* IdiaOnvifParser.swift in Sources */,
+				78CC881D20C31A8D00D32518 /* main.m in Sources */,
+				78CC884020C35EB600D32518 /* IdiaImageView.m in Sources */,
+				78CC881520C31A8B00D32518 /* AppDelegate.m in Sources */,
+				78F9AA7D20C44C8C00813BDA /* ONVIFCamera.swift in Sources */,
+				78CC882720C31B7200D32518 /* IdiaMainControl.m in Sources */,
+				78CC883D20C336AA00D32518 /* IdiaVideoSource.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		78CC881820C31A8D00D32518 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78CC881920C31A8D00D32518 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78CC881F20C31A8D00D32518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "~/dev/3rd/ffmpeg";
+				LIBRARY_SEARCH_PATHS = "~/dev/depends/v5/ffmpeg/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		78CC882020C31A8D00D32518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "~/dev/3rd/ffmpeg";
+				LIBRARY_SEARCH_PATHS = "~/dev/depends/v5/ffmpeg/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		78CC882220C31A8D00D32518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FaceDetector/FaceDetector.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MG2QJF3Y75;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ONVIFCamera/ONVIFCamera/SOAPEngine",
+				);
+				INFOPLIST_FILE = FaceDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ffmpeg",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.igordiakov.FaceDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaceDetector-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		78CC882320C31A8D00D32518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FaceDetector/FaceDetector.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MG2QJF3Y75;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ONVIFCamera/ONVIFCamera/SOAPEngine",
+				);
+				INFOPLIST_FILE = FaceDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ffmpeg",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.igordiakov.FaceDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaceDetector-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78CC880B20C31A8B00D32518 /* Build configuration list for PBXProject "FaceDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78CC881F20C31A8D00D32518 /* Debug */,
+				78CC882020C31A8D00D32518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78CC882120C31A8D00D32518 /* Build configuration list for PBXNativeTarget "FaceDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78CC882220C31A8D00D32518 /* Debug */,
+				78CC882320C31A8D00D32518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78CC880820C31A8B00D32518 /* Project object */;
+}
